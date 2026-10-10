@@ -1,21 +1,18 @@
 import java.io.*;
 public class Equipment{
     public static void equipment(String[] args){
-        BufferedReader reader = null;
-        String line = null;
         int count = 0;
-        try{
-        reader = new BufferedReader(new FileReader("hospital_equipment.csv"));
-        while ((line = reader.readLine()) != null)
-            count++;
-        reader.close();
+        try(BufferedReader reader = new BufferedReader(new FileReader("hospital_equipment.csv"))){
+                while ((reader.readLine()) != null)
+                    count++;
+                count -= 1;
+                reader.close();
         } catch (IOException e){
             System.out.println("Error"+e);
         } finally{
             System.out.println(count);
         }
-    }
-}
+
 
 
 
@@ -32,6 +29,6 @@ public class Equipment{
         } catch (IOException e) {
             System.out.println("error");
             
-        }
+        }*/
     }
-}*/
+}
