@@ -1,0 +1,51 @@
+equipmentID,equipmentType,department,status,priority,maintenanceCost,lastMaintenanceDate,nextMaintenanceDate
+EQ2001,Patient Monitor,Emergency,Operational,High,111.5,19/05/2026,18/06/2026
+EQ2002,Infusion Pump,ICU,Operational,Medium,158,23/09/2026,7/11/2026
+EQ2003,Defibrillator,Imaging,Operational,Low,204.5,26/06/2026,25/08/2026
+EQ2004,Wheelchair,Surgery,Unavailable,High,251,30/09/2026,14/12/2026
+EQ2005,Ultrasound Machine,Emergency,Operational,Medium,76.25,4/04/2026,3/07/2026
+EQ2006,ECG Machine,ICU,Operational,Low,122.75,30/08/2026,29/09/2026
+EQ2007,Patient Monitor,Imaging,Operational,High,169.25,28/04/2026,12/06/2026
+EQ2008,Infusion Pump,Surgery,Operational,Medium,215.75,22/08/2026,21/10/2026
+EQ2009,Defibrillator,Emergency,Unavailable,Medium,262.25,2/06/2026,16/08/2026
+EQ2010,Wheelchair,ICU,Operational,High,87.5,6/09/2026,5/12/2026
+EQ2011,Ultrasound Machine,Imaging,Operational,Medium,134,31/05/2026,30/06/2026
+EQ2012,ECG Machine,Surgery,Operational,Low,180.5,4/08/2026,18/09/2026
+EQ2013,Patient Monitor,Emergency,Operational,High,227,12/05/2026,11/07/2026
+EQ2014,Infusion Pump,ICU,Operational,Medium,273.5,13/09/2026,27/11/2026
+EQ2015,Defibrillator,Imaging,Unavailable,Medium,98.75,11/05/2026,9/08/2026
+EQ2016,Wheelchair,Surgery,Operational,High,145.25,15/09/2026,15/10/2026
+EQ2017,Ultrasound Machine,Emergency,Operational,Medium,191.75,8/05/2026,22/06/2026
+EQ2018,ECG Machine,ICU,Operational,Low,238.25,3/10/2026,2/12/2026
+EQ2019,Patient Monitor,Imaging,Operational,High,71,17/06/2026,31/08/2026
+EQ2020,Infusion Pump,Surgery,Operational,Medium,110,20/04/2026,19/07/2026
+EQ2021,Defibrillator,Emergency,Operational,Low,156.5,25/10/2026,24/11/2026
+EQ2022,Wheelchair,ICU,Unavailable,High,203,29/04/2026,13/06/2026
+EQ2023,Ultrasound Machine,Imaging,Operational,Medium,249.5,8/08/2026,7/10/2026
+EQ2024,ECG Machine,Surgery,Operational,Low,82.25,14/06/2026,28/08/2026
+EQ2025,Patient Monitor,Emergency,Operational,High,121.25,21/09/2026,20/12/2026
+EQ2026,Infusion Pump,ICU,Operational,Medium,167.75,6/08/2026,5/09/2026
+EQ2027,Defibrillator,Imaging,Operational,Medium,214.25,12/05/2026,26/06/2026
+EQ2028,Wheelchair,Surgery,Unavailable,High,260.75,17/09/2026,16/11/2026
+EQ2029,Ultrasound Machine,Emergency,Operational,Medium,93.5,28/04/2026,12/07/2026
+EQ2030,ECG Machine,ICU,Operational,Low,132.5,5/09/2026,4/12/2026
+EQ2031,Patient Monitor,Imaging,Operational,High,179,24/07/2026,23/08/2026
+EQ2032,Infusion Pump,Surgery,Operational,Medium,225.5,16/08/2026,30/09/2026
+EQ2033,Defibrillator,Emergency,Operational,Low,272,9/04/2026,8/06/2026
+EQ2034,Wheelchair,ICU,Unavailable,High,104.75,29/09/2026,13/12/2026
+EQ2035,Ultrasound Machine,Imaging,Operational,Medium,143.75,19/06/2026,17/09/2026
+EQ2036,ECG Machine,Surgery,Operational,Low,190.25,1/06/2026,1/07/2026
+EQ2037,Patient Monitor,Emergency,Operational,High,236.75,14/09/2026,29/10/2026
+EQ2038,Infusion Pump,ICU,Operational,Medium,69.5,11/06/2026,10/08/2026
+EQ2039,Defibrillator,Imaging,Operational,Low,116,22/09/2026,6/12/2026
+EQ2040,Wheelchair,Surgery,Operational,High,155,23/03/2026,21/06/2026
+EQ2041,Ultrasound Machine,Emergency,Unavailable,Medium,201.5,15/08/2026,14/09/2026
+EQ2042,ECG Machine,ICU,Operational,Low,248,18/06/2026,2/08/2026
+EQ2043,Patient Monitor,Imaging,Operational,High,80.75,24/09/2026,23/11/2026
+EQ2044,Infusion Pump,Surgery,Operational,Medium,127.25,1/04/2026,15/06/2026
+EQ2045,Defibrillator,Emergency,Operational,Low,166.25,12/09/2026,11/12/2026
+EQ2046,Wheelchair,ICU,Operational,High,212.75,27/06/2026,27/07/2026
+EQ2047,Ultrasound Machine,Imaging,Unavailable,Medium,259.25,24/08/2026,8/10/2026
+EQ2048,ECG Machine,Surgery,Operational,Low,92,20/06/2026,19/08/2026
+EQ2049,Patient Monitor,Emergency,Operational,High,138.5,20/08/2026,3/11/2026
+EQ2050,Infusion Pump,ICU,Operational,Low,177.5,27/03/2026,25/06/2026
