@@ -18,7 +18,7 @@ public class Main{
             }else if (userInput == 2){
                 System.out.println("Search Equipment");
             }else if (userInput == 3){
-                System.out.println("Maintenance Report");
+                Maintenance.maintenance(equipmentArray);
             }else if (userInput == 4){
                 return;
             }else{

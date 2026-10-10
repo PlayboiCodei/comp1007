@@ -1,7 +1,7 @@
 public class Statistics{
-    private Equipment[] equipmentArray;
-    public void statistics(Equipment[] equipmentArray){
-        this.equipmentArray = equipmentArray;
+    private static Equipment[] equipmentArray;
+    public static void statistics(Equipment[] equipmentArray){
+        Statistics.equipmentArray = equipmentArray;
         System.out.println("============================================");
         System.out.println("           Equipment Statistics");
         System.out.println("============================================");
@@ -29,6 +29,6 @@ public class Statistics{
         }
         return count;
     }
-    
+
 
 }
