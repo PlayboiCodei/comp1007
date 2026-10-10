@@ -11,4 +11,7 @@ public class Date {
         year = Integer.parseInt(Dates[2]);
 
     }
+    public String printStringDate(){
+        return String.format("%d/%d/%d",day,month,year);
+    }
 }
