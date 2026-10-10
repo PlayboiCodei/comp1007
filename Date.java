@@ -14,4 +14,8 @@ public class Date {
     public String printStringDate(){
         return String.format("%d/%d/%d",day,month,year);
     }
+
+    public String compareDate(Date date1, Date date2){
+        if (date1.year >)
+    }
 }

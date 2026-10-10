@@ -81,7 +81,7 @@ public class Equipment{
             return nextMaintenanceDate.printStringDate();
         }
 
-
+            // Print all Eqipment within cell Method
     public void printAllEquipments(){
             System.out.println("EquipmentID: " + getEqipmentID());
             System.out.println("EquipmentType: " + getEqipmentType());
@@ -92,7 +92,7 @@ public class Equipment{
             System.out.println("LastMaintenanceDate: " + getLastMaintenanceDate());
             System.out.println("getNextMaintenanceDate: " + getNextMaintenanceDate());
         }
-
+        //Print the whole array method
     public static void printEquipmentArray(Equipment[] equipmentArray){
         for (int i=0; i < equipmentArray.length; i++){
             equipmentArray[i].printAllEquipments();
