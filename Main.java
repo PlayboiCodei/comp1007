@@ -14,7 +14,7 @@ public class Main{
             System.out.println("Please select an option:");
             int userInput = sc.nextInt();
             if (userInput == 1){
-                System.out.println("View Equipment Statistics");
+                Statistics.statistics(equipmentArray);
             }else if (userInput == 2){
                 System.out.println("Search Equipment");
             }else if (userInput == 3){

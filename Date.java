@@ -15,7 +15,7 @@ public class Date {
         return String.format("%d/%d/%d",day,month,year);
     }
 
-    public static String compareDate(Date date1, Date date2){
+    public static String compareDate(Date date1, Date date2){ // Comparing if date 1 is happening before date 2
         if (date1.year < date2.year){
             return "Before";
         }else if (date1.year > date2.year){
