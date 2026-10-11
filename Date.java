@@ -5,14 +5,14 @@ public class Date {
     private static final int[] dayCheck = {31,28,31,30,31,30,31,31,30,31,30,31};
 
     public Date(String dateString){
-        String[] Dates = dateString.split("/");
-        if (checkDateStringArray(Dates)){
-            day = Integer.parseInt(Dates[0]);
-            month = Integer.parseInt(Dates[1]);
-            year = Integer.parseInt(Dates[2]);
-        } else{
-            System.out.println("Invlaid Date");
+        String[] dateArray = splitDates(dateString);
+        if (checkDateStringArray(dateArray)){
+            assignDate(dateArray);
+        }else{
+            throw new IllegalArgumentException("Invlaid Date: "+ dateString);
         }
+
+
 
     }
     public String printStringDate(){
@@ -45,6 +45,19 @@ public class Date {
 
 
     }
+
+
+    public void assignDate(String[] dateArray){
+            this.day = Integer.parseInt(dateArray[0]);
+            this.month = Integer.parseInt(dateArray[1]);
+            this.year = Integer.parseInt(dateArray[2]);
+    }
+
+    public String[] splitDates(String dateString){
+        return dateString.split("/");
+    }
+
+
 
     public static String compareDate(Date date1, Date date2){ // Comparing if date 1 is happening before date 2
         if (date1.year < date2.year){

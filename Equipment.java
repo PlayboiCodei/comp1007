@@ -33,16 +33,15 @@ public class Equipment{
                     count++;
                 }
 
-        } catch (IOException e){
+        } catch (Exception e){
             System.out.println("Error"+e);
-            return null;
+            throw new Error("Issue counting File");
         }
-        
+        int index = 0; 
         try(BufferedReader reader = new BufferedReader(new FileReader("hospital_equipment.csv"))){
             reader.readLine(); // Skips Header
         // declare equipment array
         Equipment[] eqipmentArray = new Equipment[count];
-        int index = 0; 
         String line = null; // String BufferReader will push to
         // Assigns Fields to EqipmentObject Inside a eqipmentArray 
         while ((line = reader.readLine()) != null) 
@@ -55,9 +54,10 @@ public class Equipment{
         }
         return eqipmentArray;
         
-        } catch (IOException e){
+        } catch (Exception e){
             System.out.println("Error"+e);
-            return null;
+            System.out.println("Found on line: "+ index);
+            throw new Error("Issue loading Equipment Array");
         }
     }
     

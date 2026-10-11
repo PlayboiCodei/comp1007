@@ -21,7 +21,10 @@ public class Main{
                 Maintenance.maintenance(equipmentArray);
             }else if (userInput == 4){
                 return;
-            }else{
+            }else if (userInput == 5){
+                Equipment.printEquipmentArray(equipmentArray);
+            }
+            else{
                 System.out.println("Invlaid input");
                 continue;
             }
