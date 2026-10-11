@@ -95,7 +95,8 @@ public class Equipment{
             return nextMaintenanceDate.getStringDate();
         }
 
-    public static void searchEquipment(Equipment[] equipmentArray){
+    public static void searchEquipment(){
+        Equipment[] equipmentArray = Main.returnEquipmentArray();
         Scanner sc = new Scanner(System.in);
             System.out.println("============================================");
             System.out.println("               Search Equipment");
@@ -118,7 +119,7 @@ public class Equipment{
                     System.out.println("---------------------------------------");
                     if(Main.yesOrNo("Would You Like To Search For Another Item Y/N")){
                         found = true;
-                        continue;
+                        break;
                     }else{
                         return;
                     }

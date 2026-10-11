@@ -1,7 +1,9 @@
 import java.util.Scanner;
+
 public class Main{
+    private static Equipment[] equipmentArray;
     public static void main(String[] args){
-        Equipment[] equipmentArray = Equipment.loadEquipments();
+        equipmentArray = Equipment.loadEquipments();
         Scanner sc = new Scanner(System.in);
         while (true){
             System.out.println("============================================");
@@ -14,11 +16,11 @@ public class Main{
             System.out.println("Please Select An Option:");
             int userInput = sc.nextInt();
             if (userInput == 1){
-                Statistics.statistics(equipmentArray);
+                Statistics.statistics();
             }else if (userInput == 2){
-                Equipment.searchEquipment(equipmentArray);
+                Equipment.searchEquipment();
             }else if (userInput == 3){
-                Maintenance.maintenance(equipmentArray);
+                Maintenance.maintenance();
             }else if (userInput == 4){
                 return;
             }else if (userInput == 5){
@@ -34,6 +36,11 @@ public class Main{
     }  
 
 //------------------------------------------------------------------------ OTHER
+
+    public static Equipment[] returnEquipmentArray(){
+        return equipmentArray;
+    }
+
     public static boolean yesOrNo(String Question){
         Scanner sc = new Scanner(System.in);
         while (true){

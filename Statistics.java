@@ -7,19 +7,17 @@ public class Statistics{
     private static int requireingMaintenanceCount;
     private static double percentageRequiringMaintenance;
     private static double avrageMaintenanceCost;
-    public static void statistics(Equipment[] equipmentArrayinput){
-        equipmentArray = equipmentArrayinput;
+    public static void statistics(){
+        equipmentArray = Main.returnEquipmentArray();
         System.out.println("============================================");
         System.out.println("           Equipment Statistics");
         System.out.println("============================================");
-        Scanner sc = new Scanner(System.in);
         if (!Maintenance.returnmaintenanceCacluated()){
             Maintenance.calcualteMaintenence();
         }
         calculateSatistics();
         printSatistics();
-        System.out.println("Press Enter TO Exit");
-        sc.nextLine();
+        Main.pressEnterToContinue();
         return;
 
     }
@@ -73,7 +71,7 @@ public static void printSatistics(){
     }
 
     public static void getPercentageRequiringMaintenance(){
-        percentageRequiringMaintenance = (requireingMaintenanceCount/totalEquipment)*100.0;
+        percentageRequiringMaintenance = ((double) requireingMaintenanceCount/totalEquipment)*100.0;
     }
 
     public static void getAvrageMaintenanceCost(){

@@ -8,8 +8,8 @@ public class Maintenance{
     private static int highPriorityMaintenanceCount;
     private static boolean maintenanceCacluated = false;
 
-    public static void maintenance(Equipment[] equipmentArrayinput){
-        equipmentArray = equipmentArrayinput;
+    public static void maintenance(){
+        equipmentArray = Main.returnEquipmentArray();
         System.out.println("============================================");
         System.out.println("           Maintenance Report");
         System.out.println("============================================");
