@@ -8,12 +8,23 @@ public class Maintenance{
         System.out.println("============================================");
         System.out.println("           Maintenance Report");
         System.out.println("============================================");
+        getReportDate();
+        System.out.println(reportDate.getStringDate());
     }
-    public void getReportDate(){
+    public static void getReportDate(){
         Scanner sc = new Scanner(System.in);
-        String userInput = sc.nextLine();
-        String[] DateArray = userInput.split("/");
-        boolean flag = checkReportDateArray(DateArray);
+        while (true){
+            System.out.print("Enter Report Date \ndd/mm/yyyy\n: ");
+            String userInput = sc.nextLine();
+            try{
+                reportDate = new Date(userInput);
+                return;
+            }
+            catch (Exception e){
+                System.out.println("Error "+e);
+                continue;
+            }
+        }
     }
 }
 

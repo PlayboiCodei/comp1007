@@ -5,8 +5,7 @@ public class Statistics{
         System.out.println("============================================");
         System.out.println("           Equipment Statistics");
         System.out.println("============================================");
-    
-    
+
     }
     public int equipmentItems(){
         return equipmentArray.length;
