@@ -13,6 +13,9 @@ public class Statistics{
         System.out.println("           Equipment Statistics");
         System.out.println("============================================");
         Scanner sc = new Scanner(System.in);
+        if (!Maintenance.returnmaintenanceCacluated()){
+            Maintenance.calcualteMaintenence();
+        }
         calculateSatistics();
         printSatistics();
         System.out.println("Press Enter TO Exit");
@@ -44,19 +47,21 @@ public static void printSatistics(){
     public static void getEquipmentItems(){
         totalEquipment = equipmentArray.length;
     }
+
     public static void getOperatiaonalEquipmentItems(){
         int count = 0;
         for (int i = 0; i < totalEquipment;i++){
-            if (equipmentArray[i].getStatus() == "Operational"){
+            if (equipmentArray[i].returnStatus() == "Operational"){
                 count++;
             }
         }
         operationalEquipment = count;
     }
+
     public static void getUnavailableEquipmentItems(){
         int count = 0;
         for (int i = 0; i < totalEquipment;i++){
-            if (equipmentArray[i].getStatus() == "Unavailable"){
+            if (equipmentArray[i].returnStatus() == "Unavailable"){
                 count++;
             }
         }
@@ -66,8 +71,6 @@ public static void printSatistics(){
     public static void getEquipmentRequiringmaintenanceCount(){
         requireingMaintenanceCount = Maintenance.returnRequireMaintenanceCount();
     }
-
-
 
     public static void getPercentageRequiringMaintenance(){
         percentageRequiringMaintenance = (requireingMaintenanceCount/totalEquipment)*100.0;
@@ -81,12 +84,9 @@ public static void printSatistics(){
         double total = 0;
         int[] arrayIndex = Maintenance.returnMaintenanceArrayIndex();
         for (int i=0; i<arrayIndex.length;i++){
-            total += equipmentArray[arrayIndex[i]].getMaintenanceCost();
+            total += equipmentArray[arrayIndex[i]].returnMaintenanceCost();
         }
         return total;
     }
-
-
-
 
 }

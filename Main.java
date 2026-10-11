@@ -11,7 +11,7 @@ public class Main{
             System.out.println("2. Search Equipment");
             System.out.println("3. Maintenance Report");
             System.out.println("4. Exit");
-            System.out.println("Please select an option:");
+            System.out.println("Please Select An Option:");
             int userInput = sc.nextInt();
             if (userInput == 1){
                 Statistics.statistics(equipmentArray);
@@ -49,5 +49,11 @@ public class Main{
             }
 
         }
+    }
+
+    public static void pressEnterToContinue(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Press Enter To Continue To Main Menu");
+            sc.nextLine();
     }
 }

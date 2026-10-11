@@ -63,35 +63,35 @@ public class Equipment{
     }
 
             // Get methods
-        public String getEquipmentID(){
+        public String returnEquipmentID(){
         return equpmentID;
         }
-        public String getEquipmentType(){
+        public String returnEquipmentType(){
             return equipmentType;
         }
-        public String getDepartment(){
+        public String returnDepartment(){
             return department;
         }
-        public String getStatus(){
+        public String returnStatus(){
             return status;
         }
-        public String getPriority(){
+        public String returnPriority(){
             return priority;
         }
-        public Double getMaintenanceCost(){
+        public Double returnMaintenanceCost(){
             return maintenanceCost;
         }
-        public Date getLastMaintenanceDate(){
+        public Date returnLastMaintenanceDate(){
             return lastMaintenanceDate;
         }
-            public Date getNextMaintenanceDate(){
+            public Date returnNextMaintenanceDate(){
             return nextMaintenanceDate;
         }
 
-        public String getLastMaintenanceDateString(){
+        public String returnLastMaintenanceDateString(){
             return lastMaintenanceDate.getStringDate();
         }
-        public String getNextMaintenanceDateString(){
+        public String returnNextMaintenanceDateString(){
             return nextMaintenanceDate.getStringDate();
         }
 
@@ -106,15 +106,15 @@ public class Equipment{
             boolean found = false;
             String equipmentSearch = sc.nextLine().strip().toUpperCase();
             for (int i = 0; i < equipmentArray.length;i++){
-                if (equipmentSearch.equals(equipmentArray[i].getEquipmentID())){
+                if (equipmentSearch.equals(equipmentArray[i].returnEquipmentID())){
                     System.out.println("\nEquipment Found:\n");
                     System.out.println("---------------------------------------");
-                    System.out.println(equipmentArray[i].getEquipmentID());
-                    System.out.println(equipmentArray[i].getEquipmentType());
-                    System.out.println(equipmentArray[i].getDepartment());
-                    System.out.println(equipmentArray[i].getStatus());
-                    System.out.println(equipmentArray[i].getPriority());
-                    System.out.println(equipmentArray[i].getMaintenanceCost());
+                    System.out.println(equipmentArray[i].returnEquipmentID());
+                    System.out.println(equipmentArray[i].returnEquipmentType());
+                    System.out.println(equipmentArray[i].returnDepartment());
+                    System.out.println(equipmentArray[i].returnStatus());
+                    System.out.println(equipmentArray[i].returnPriority());
+                    System.out.println(equipmentArray[i].returnMaintenanceCost());
                     System.out.println("---------------------------------------");
                     if(Main.yesOrNo("Would You Like To Search For Another Item Y/N")){
                         found = true;
@@ -136,14 +136,14 @@ public class Equipment{
 
     // Print all Eqipment within cell Method
     public void printAllEquipments(){
-            System.out.println("EquipmentID: " + getEquipmentID());
-            System.out.println("EquipmentType: " + getEquipmentType());
-            System.out.println("Department: " + getDepartment());
-            System.out.println("Status: " + getStatus());
-            System.out.println("Priority: " + getPriority());
-            System.out.println("MaintenanceCost: " + getMaintenanceCost());
-            System.out.println("LastMaintenanceDate: " + getLastMaintenanceDate());
-            System.out.println("getNextMaintenanceDate: " + getNextMaintenanceDate());
+            System.out.println("EquipmentID: " + returnEquipmentID());
+            System.out.println("EquipmentType: " + returnEquipmentType());
+            System.out.println("Department: " + returnDepartment());
+            System.out.println("Status: " + returnStatus());
+            System.out.println("Priority: " + returnPriority());
+            System.out.println("MaintenanceCost: " + returnMaintenanceCost());
+            System.out.println("LastMaintenanceDate: " + returnLastMaintenanceDate());
+            System.out.println("getNextMaintenanceDate: " + returnNextMaintenanceDate());
         }
         //Print the whole array method
     public static void printEquipmentArray(Equipment[] equipmentArray){
