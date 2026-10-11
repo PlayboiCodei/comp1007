@@ -80,11 +80,20 @@ public class Equipment{
         public Double getMaintenanceCost(){
             return maintenanceCost;
         }
-        public String getLastMaintenanceDate(){
-            return lastMaintenanceDate.printStringDate();
+        public Date getLastMaintenanceDate(){
+            return lastMaintenanceDate;
         }
-        public String getNextMaintenanceDate(){
-            return nextMaintenanceDate.printStringDate();
+            public Date getNextMaintenanceDate(){
+            return nextMaintenanceDate;
+        }
+
+
+
+        public String getLastMaintenanceDateString(){
+            return lastMaintenanceDate.getStringDate();
+        }
+        public String getNextMaintenanceDateString(){
+            return nextMaintenanceDate.getStringDate();
         }
 
             // Print all Eqipment within cell Method
