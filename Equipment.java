@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class Equipment{ 
         // Declare Object fields
@@ -60,12 +61,12 @@ public class Equipment{
             throw new Error("Issue loading Equipment Array");
         }
     }
-    
+
             // Get methods
-        public String getEqipmentID(){
+        public String getEquipmentID(){
         return equpmentID;
         }
-        public String getEqipmentType(){
+        public String getEquipmentType(){
             return equipmentType;
         }
         public String getDepartment(){
@@ -87,8 +88,6 @@ public class Equipment{
             return nextMaintenanceDate;
         }
 
-
-
         public String getLastMaintenanceDateString(){
             return lastMaintenanceDate.getStringDate();
         }
@@ -96,10 +95,49 @@ public class Equipment{
             return nextMaintenanceDate.getStringDate();
         }
 
-            // Print all Eqipment within cell Method
+    public static void searchEquipment(Equipment[] equipmentArray){
+        Scanner sc = new Scanner(System.in);
+            System.out.println("============================================");
+            System.out.println("               Search Equipment");
+            System.out.println("============================================\n");
+        while (true){
+            System.out.println("Enter EquipmentID");
+            System.out.print(":");
+            boolean found = false;
+            String equipmentSearch = sc.nextLine().strip().toUpperCase();
+            for (int i = 0; i < equipmentArray.length;i++){
+                if (equipmentSearch.equals(equipmentArray[i].getEquipmentID())){
+                    System.out.println("\nEquipment Found:\n");
+                    System.out.println("---------------------------------------");
+                    System.out.println(equipmentArray[i].getEquipmentID());
+                    System.out.println(equipmentArray[i].getEquipmentType());
+                    System.out.println(equipmentArray[i].getDepartment());
+                    System.out.println(equipmentArray[i].getStatus());
+                    System.out.println(equipmentArray[i].getPriority());
+                    System.out.println(equipmentArray[i].getMaintenanceCost());
+                    System.out.println("---------------------------------------");
+                    if(Main.yesOrNo("Would You Like To Search For Another Item Y/N")){
+                        found = true;
+                        continue;
+                    }else{
+                        return;
+                    }
+                }
+            }
+            if (found == true ||Main.yesOrNo("Item Not Found\nWould You Like to Try Again Y/N?")){
+                continue;
+            }else{
+                return;
+            }
+
+        }
+    }
+    // Not Needed MEthods
+
+    // Print all Eqipment within cell Method
     public void printAllEquipments(){
-            System.out.println("EquipmentID: " + getEqipmentID());
-            System.out.println("EquipmentType: " + getEqipmentType());
+            System.out.println("EquipmentID: " + getEquipmentID());
+            System.out.println("EquipmentType: " + getEquipmentType());
             System.out.println("Department: " + getDepartment());
             System.out.println("Status: " + getStatus());
             System.out.println("Priority: " + getPriority());
@@ -114,6 +152,7 @@ public class Equipment{
             System.out.println("---------------------------------------");
         }
     }
-    }
-        
+}
+
+
         

@@ -16,7 +16,7 @@ public class Main{
             if (userInput == 1){
                 Statistics.statistics(equipmentArray);
             }else if (userInput == 2){
-                System.out.println("Search Equipment");
+                Equipment.searchEquipment(equipmentArray);
             }else if (userInput == 3){
                 Maintenance.maintenance(equipmentArray);
             }else if (userInput == 4){
@@ -32,4 +32,22 @@ public class Main{
         }
 
     }  
+
+//------------------------------------------------------------------------ OTHER
+    public static boolean yesOrNo(String Question){
+        Scanner sc = new Scanner(System.in);
+        while (true){
+            System.out.println(Question);
+            String userChoice = sc.nextLine().strip().toUpperCase();
+            if (userChoice.equals("Y")||userChoice.equals("YES")){
+                return true;
+            }else if (userChoice.equals("N")||userChoice.equals("NO")){
+                return false;
+            }else{
+                System.out.println("Invlaid Choice");
+                continue;
+            }
+
+        }
+    }
 }
