@@ -5,7 +5,7 @@ public class Statistics{
     private static int operationalEquipment;
     private static int unavailableEquipment;
     private static int requireingMaintenanceCount;
-    private static double percentageRequiringMaintenance;
+    private static double percentageRequiringMaintenance=0;
     private static double avrageMaintenanceCost;
     public static void statistics(){
         equipmentArray = Main.returnEquipmentArray();
@@ -37,8 +37,8 @@ public static void printSatistics(){
     System.out.println("Number Of Operational Items: "+ operationalEquipment);
     System.out.println("Number Of Unavailable Items: "+ unavailableEquipment);
     System.out.println("Number Of Equipment Items Requiring Maintenance: "+requireingMaintenanceCount);
-    System.out.println("Percentage of Equipment Requiring Maintenance: "+percentageRequiringMaintenance);
-    System.out.println("Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: "+ avrageMaintenanceCost);
+    System.out.println("Percentage of Equipment Requiring Maintenance: "+ String.format("%.2f", percentageRequiringMaintenance));
+    System.out.println("Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: "+ String.format("%.2f", avrageMaintenanceCost));
     System.out.println("--------------------------------------------");
 }
 
@@ -49,7 +49,7 @@ public static void printSatistics(){
     public static void getOperatiaonalEquipmentItems(){
         int count = 0;
         for (int i = 0; i < totalEquipment;i++){
-            if (equipmentArray[i].returnStatus() == "Operational"){
+            if (equipmentArray[i].returnStatus().equals("Operational")){
                 count++;
             }
         }
@@ -59,7 +59,7 @@ public static void printSatistics(){
     public static void getUnavailableEquipmentItems(){
         int count = 0;
         for (int i = 0; i < totalEquipment;i++){
-            if (equipmentArray[i].returnStatus() == "Unavailable"){
+            if (equipmentArray[i].returnStatus().equals("Unavailable")){
                 count++;
             }
         }
@@ -75,6 +75,9 @@ public static void printSatistics(){
     }
 
     public static void getAvrageMaintenanceCost(){
+        if (requireingMaintenanceCount == 0){
+            avrageMaintenanceCost = 0;
+        }
         avrageMaintenanceCost = getTotalMaintenanceCost()/requireingMaintenanceCount;
     }
 

@@ -14,19 +14,16 @@ public class Main{
             System.out.println("3. Maintenance Report");
             System.out.println("4. Exit");
             System.out.println("Please Select An Option:");
-            int userInput = sc.nextInt();
-            if (userInput == 1){
+            String userInput = sc.nextLine().strip();
+            if (userInput.equals("1")){
                 Statistics.statistics();
-            }else if (userInput == 2){
+            }else if (userInput.equals("2")){
                 Equipment.searchEquipment();
-            }else if (userInput == 3){
+            }else if (userInput.equals("3")){
                 Maintenance.maintenance();
-            }else if (userInput == 4){
+            }else if (userInput.equals("4")){
                 return;
-            }else if (userInput == 5){
-                Equipment.printEquipmentArray(equipmentArray);
-            }
-            else{
+            }else{
                 System.out.println("Invlaid input");
                 continue;
             }

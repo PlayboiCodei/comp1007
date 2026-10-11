@@ -13,7 +13,6 @@ public class Maintenance{
         System.out.println("============================================");
         System.out.println("           Maintenance Report");
         System.out.println("============================================");
-
         if (!maintenanceCacluated){
             calcualteMaintenence();
             printMaintenanceReport();
@@ -32,6 +31,7 @@ public class Maintenance{
     }
 
     public static void calcualteMaintenence(){
+        equipmentArray = Main.returnEquipmentArray();
         getReportDate();
         getItemsRequiringMaintenanceCount();
         getItemsRequiringMaintenanceIndex();
@@ -59,7 +59,8 @@ public class Maintenance{
 
     public static void printMaintenanceReport(){
         int index = 0;
-        System.out.println("Equipment Requiring Maintenance");
+        System.out.println("\nEquipment Requiring Maintenance\n");
+        System.out.println("--------------------------------------------");
         for (int i = 0; i < requireMaintenanceCount; i++){
             index = requireMaintenanceArrayIndex[i];
             System.out.println(equipmentArray[index].returnEquipmentID());
