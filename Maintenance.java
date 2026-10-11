@@ -60,18 +60,26 @@ public class Maintenance{
     public static void printMaintenanceReport(){
         int index = 0;
         System.out.println("\nEquipment Requiring Maintenance\n");
+        Logger.log("Maintenance Report: ");
         System.out.println("--------------------------------------------");
         for (int i = 0; i < requireMaintenanceCount; i++){
             index = requireMaintenanceArrayIndex[i];
-            System.out.println(equipmentArray[index].returnEquipmentID());
-            System.out.println(equipmentArray[index].returnEquipmentType());
-            System.out.println(equipmentArray[index].returnDepartment());
-            System.out.println(equipmentArray[index].returnPriority());
-            System.out.println(equipmentArray[index].returnNextMaintenanceDateString());
+            System.out.println("Equipment ID: " + equipmentArray[index].returnEquipmentID());
+            Logger.log("Equipment ID: " + equipmentArray[index].returnEquipmentID());
+            System.out.println("Equipment Type: " + equipmentArray[index].returnEquipmentType());
+            Logger.log("Equipment Type: " + equipmentArray[index].returnEquipmentType());
+            System.out.println("Department: " + equipmentArray[index].returnDepartment());
+            Logger.log("Department: " + equipmentArray[index].returnDepartment());
+            System.out.println("Priority: " + equipmentArray[index].returnPriority());
+            Logger.log("Priority: " + equipmentArray[index].returnPriority());
+            System.out.println("Next Maintenance Date: " + equipmentArray[index].returnNextMaintenanceDateString());
+            Logger.log("Next Maintenance Date: " + equipmentArray[index].returnNextMaintenanceDateString());
             System.out.println("--------------------------------------------");
         }
         System.out.println("Total Number Of Equipment Items Requiring Maintenance: "+requireMaintenanceCount);
+        Logger.log("Total Number Of Equipment Items Requiring Maintenance: "+requireMaintenanceCount);
         System.out.println("Total Number Of High-Priority Items Requiring Maintenance: "+ highPriorityMaintenanceCount);
+        Logger.log("Total Number Of High-Priority Items Requiring Maintenance: "+ highPriorityMaintenanceCount);
     }
 
     public static boolean returnmaintenanceCacluated(){
@@ -127,6 +135,7 @@ public class Maintenance{
             String userInput = sc.nextLine();
             try{
                 reportDate = new Date(userInput);
+                Logger.log("Report Date Added: "+reportDate.returnStringDate());
                 return;
             }
             catch (Exception e){

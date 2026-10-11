@@ -1,0 +1,17 @@
+System Starts
+Loads Equipment Array
+System Loads Into Search Equipment
+System Starts
+Loads Equipment Array
+System loads Into Maintenance
+Report Date Added: 22/4/2027
+System Loads Into Search Equipment
+Searches ForEQ2025
+Equipment Found:
+Equipment ID: EQ2025
+Equipment Type: Patient Monitor
+Department: Emergency
+Status: Operational
+Priority: High
+Maintenance Cost:121.25
+Returns To Main Menu

@@ -18,6 +18,7 @@ public class Statistics{
         calculateSatistics();
         printSatistics();
         Main.pressEnterToContinue();
+        Logger.log("Exits To Main Menu");
         return;
 
     }
@@ -32,13 +33,20 @@ public static void calculateSatistics(){
 }
 
 public static void printSatistics(){
+    Logger.log("Satistics:");
     System.out.println("--------------------------------------------");
     System.out.println("Total Number Of Equipment Items: "+totalEquipment);
+    Logger.log("Total Number Of Equipment Items: "+totalEquipment);
     System.out.println("Number Of Operational Items: "+ operationalEquipment);
+    Logger.log("Number Of Operational Items: "+ operationalEquipment);
     System.out.println("Number Of Unavailable Items: "+ unavailableEquipment);
+    Logger.log("Number Of Unavailable Items: "+ unavailableEquipment);
     System.out.println("Number Of Equipment Items Requiring Maintenance: "+requireingMaintenanceCount);
+    Logger.log("Number Of Equipment Items Requiring Maintenance: "+requireingMaintenanceCount);
     System.out.println("Percentage of Equipment Requiring Maintenance: "+ String.format("%.2f", percentageRequiringMaintenance));
+    Logger.log("Percentage of Equipment Requiring Maintenance: "+ String.format("%.2f", percentageRequiringMaintenance));
     System.out.println("Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: "+ String.format("%.2f", avrageMaintenanceCost));
+    Logger.log("Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: "+ String.format("%.2f", avrageMaintenanceCost));
     System.out.println("--------------------------------------------");
 }
 

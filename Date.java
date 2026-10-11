@@ -15,7 +15,7 @@ public class Date {
         }
 
     }
-    public String getStringDate(){
+    public String returnStringDate(){
         return String.format("%d/%d/%d",day,month,year);
     }
 

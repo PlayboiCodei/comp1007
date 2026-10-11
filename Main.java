@@ -5,6 +5,8 @@ public class Main{
     public static void main(String[] args){
         equipmentArray = Equipment.loadEquipments();
         Scanner sc = new Scanner(System.in);
+        Logger.log("System Starts");
+        Logger.log("Loads Equipment Array");
         while (true){
             System.out.println("============================================");
             System.out.println("Hospital Equipment Maintenance Assistant");
@@ -13,18 +15,24 @@ public class Main{
             System.out.println("2. Search Equipment");
             System.out.println("3. Maintenance Report");
             System.out.println("4. Exit");
-            System.out.println("Please Select An Option:");
+            System.out.println("Please Select An Option");
+            System.out.print(":");
             String userInput = sc.nextLine().strip();
             if (userInput.equals("1")){
+                Logger.log("System Loads Into Satistics");
                 Statistics.statistics();
             }else if (userInput.equals("2")){
+                Logger.log("System Loads Into Search Equipment");
                 Equipment.searchEquipment();
             }else if (userInput.equals("3")){
+                Logger.log("System loads Into Maintenance");
                 Maintenance.maintenance();
             }else if (userInput.equals("4")){
+                Logger.log("System Exit's");
                 return;
             }else{
                 System.out.println("Invlaid input");
+                pressEnterToContinue();
                 continue;
             }
 

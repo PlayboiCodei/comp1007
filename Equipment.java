@@ -1,4 +1,5 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Scanner;
 
 public class Equipment{ 
@@ -36,6 +37,7 @@ public class Equipment{
 
         } catch (Exception e){
             System.out.println("Error"+e);
+            Logger.log("Issue counting File\n Error: "+e+"System Creashes");
             throw new Error("Issue counting File");
         }
         int index = 0; 
@@ -57,7 +59,8 @@ public class Equipment{
         
         } catch (Exception e){
             System.out.println("Error"+e);
-            System.out.println("Found on line: "+ index);
+            System.out.println("Found On Line: "+ index);
+            Logger.log("Issue Loading Equipment Array\n Error: "+e+"System Creashes");
             throw new Error("Issue loading Equipment Array");
         }
     }
@@ -89,10 +92,10 @@ public class Equipment{
         }
 
         public String returnLastMaintenanceDateString(){
-            return lastMaintenanceDate.getStringDate();
+            return lastMaintenanceDate.returnStringDate();
         }
         public String returnNextMaintenanceDateString(){
-            return nextMaintenanceDate.getStringDate();
+            return nextMaintenanceDate.returnStringDate();
         }
 
     public static void searchEquipment(){
@@ -106,28 +109,40 @@ public class Equipment{
             System.out.print(":");
             boolean found = false;
             String equipmentSearch = sc.nextLine().strip().toUpperCase();
+            Logger.log("Searches For"+equipmentSearch );
             for (int i = 0; i < equipmentArray.length;i++){
                 if (equipmentSearch.equals(equipmentArray[i].returnEquipmentID())){
                     System.out.println("\nEquipment Found:\n");
+                    Logger.log("Equipment Found:");
                     System.out.println("---------------------------------------");
-                    System.out.println(equipmentArray[i].returnEquipmentID());
-                    System.out.println(equipmentArray[i].returnEquipmentType());
-                    System.out.println(equipmentArray[i].returnDepartment());
-                    System.out.println(equipmentArray[i].returnStatus());
-                    System.out.println(equipmentArray[i].returnPriority());
-                    System.out.println(equipmentArray[i].returnMaintenanceCost());
+                    System.out.println("Equipment ID: " + equipmentArray[i].returnEquipmentID());
+                    Logger.log("Equipment ID: " + equipmentArray[i].returnEquipmentID());
+                    System.out.println("Equipment Type: " + equipmentArray[i].returnEquipmentType());
+                    Logger.log("Equipment Type: " +equipmentArray[i].returnEquipmentType());
+                    System.out.println("Department: " + equipmentArray[i].returnDepartment());
+                    Logger.log("Department: " + equipmentArray[i].returnDepartment());
+                    System.out.println("Status: " + equipmentArray[i].returnStatus());
+                    Logger.log("Status: " + equipmentArray[i].returnStatus());
+                    System.out.println("Priority: " + equipmentArray[i].returnPriority());
+                    Logger.log("Priority: " + equipmentArray[i].returnPriority());
+                    System.out.println("Maintenance Cost:" + equipmentArray[i].returnMaintenanceCost());
+                    Logger.log("Maintenance Cost:" + equipmentArray[i].returnMaintenanceCost());
                     System.out.println("---------------------------------------");
                     if(Main.yesOrNo("Would You Like To Search For Another Item Y/N")){
+                        Logger.log("Searches For Another Equipment Item");
                         found = true;
                         break;
                     }else{
+                        Logger.log("Returns To Main Menu");
                         return;
                     }
                 }
             }
             if (found == true ||Main.yesOrNo("Item Not Found\nWould You Like to Try Again Y/N?")){
+                Logger.log("Item Not Found Searches Again");
                 continue;
             }else{
+                Logger.log("Item Not Found Exits To Main Menu");
                 return;
             }
 
