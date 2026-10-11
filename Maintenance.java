@@ -12,15 +12,20 @@ public class Maintenance{
         System.out.println("============================================");
         System.out.println("           Maintenance Report");
         System.out.println("============================================");
+        calcualteMaintenence();
+        printMaintenanceReport();
+    }
+
+    public static void calcualteMaintenence(){
         getReportDate();
         getItemsRequiringMaintenanceCount();
         getItemsRequiringMaintenanceIndex();
         getHighPriorityMaintenanceCount();
-        printMaintenanceReport();
     }
 
     public static void printMaintenanceReport(){
         int index = 0;
+        System.out.println("Equipment Requiring Maintenance");
         for (int i = 0; i < requireMaintenanceCount; i++){
             index = requireMaintenanceArrayIndex[i];
             System.out.println(equipmentArray[index].getEquipmentID());
@@ -30,6 +35,8 @@ public class Maintenance{
             System.out.println(equipmentArray[index].getNextMaintenanceDateString());
             System.out.println("--------------------------------------------");
         }
+        System.out.println("Total Number Of Equipment Items Requiring Maintenance: "+requireMaintenanceCount);
+        System.out.println("Total Number Of High-Priority Items Requiring Maintenance: "+ highPriorityMaintenanceCount);
     }
 
     public static int[] returnMaintenanceArrayIndex(){
