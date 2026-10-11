@@ -4,7 +4,7 @@ public class Maintenance{
     private static Equipment[] equipmentArray;
     private static Date reportDate;
     private static int requireMaintenanceCount;
-    private static int[] requireMaintenanceArray;
+    private static int[] requireMaintenanceArrayIndex;
     private static int highPriorityMaintenanceCount;
 
     public static void maintenance(Equipment[] equipmentArrayinput){
@@ -22,7 +22,7 @@ public class Maintenance{
     public static void printMaintenanceReport(){
         int index = 0;
         for (int i = 0; i < requireMaintenanceCount; i++){
-            index = requireMaintenanceArray[i];
+            index = requireMaintenanceArrayIndex[i];
             System.out.println(equipmentArray[index].getEquipmentID());
             System.out.println(equipmentArray[index].getEquipmentType());
             System.out.println(equipmentArray[index].getDepartment());
@@ -32,13 +32,18 @@ public class Maintenance{
         }
     }
 
+    public static int[] returnMaintenanceArrayIndex(){
+        return requireMaintenanceArrayIndex;
+    }
 
-
+    public static int returnRequireMaintenanceCount(){
+        return requireMaintenanceCount;
+    }
 
     public static void getHighPriorityMaintenanceCount(){
         int count = 0;
         for (int i = 0; i < requireMaintenanceCount; i++){
-            String result = equipmentArray[requireMaintenanceArray[i]].getPriority();
+            String result = equipmentArray[requireMaintenanceArrayIndex[i]].getPriority();
             if (result.equals("High")){
                 count++;
             }
@@ -56,7 +61,7 @@ public class Maintenance{
                 array[count++] = i;
             }
         }
-        requireMaintenanceArray = array;
+        requireMaintenanceArrayIndex = array;
     }
 
     public static void getItemsRequiringMaintenanceCount(){
