@@ -129,6 +129,9 @@ public class Maintenance{
         while (true){
             System.out.print("\nEnter Report Date \ndd/mm/yyyy\n: ");
             String userInput = sc.nextLine();
+            if (userInput == ""){
+                continue;
+            }
             try{
                 reportDate = new Date(userInput);
                 Logger.log("Report Date Added: "+reportDate.returnStringDate());
