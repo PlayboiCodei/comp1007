@@ -18,7 +18,9 @@ public class Main{
             System.out.println("Please Select An Option");
             System.out.print(":");
             String userInput = sc.nextLine().strip();
-            if (userInput.equals("1")){
+            if (userInput == ""){
+                continue;
+            }else if (userInput.equals("1")){
                 Logger.log("System Loads Into Satistics");
                 Statistics.statistics();
             }else if (userInput.equals("2")){
@@ -53,7 +55,9 @@ public class Main{
             System.out.println("Y/N");
             System.out.print(":");
             String userChoice = sc.nextLine().strip().toUpperCase();
-            if (userChoice.equals("Y")||userChoice.equals("YES")){
+            if (userChoice == ""){
+                continue;
+            }else if (userChoice.equals("Y")||userChoice.equals("YES")){
                 return true;
             }else if (userChoice.equals("N")||userChoice.equals("NO")){
                 return false;

@@ -285,3 +285,5 @@ Next Maintenance Date: 25/6/2026
 Total Number Of Equipment Items Requiring Maintenance: 50
 Total Number Of High-Priority Items Requiring Maintenance: 17
 System Exit's
+System Starts
+Loads Equipment Array
