@@ -128,7 +128,7 @@ public class Equipment{
                     System.out.println("Maintenance Cost:" + equipmentArray[i].returnMaintenanceCost());
                     Logger.log("Maintenance Cost:" + equipmentArray[i].returnMaintenanceCost());
                     System.out.println("---------------------------------------");
-                    found = false;
+                    found = true;
                 }
             }
             if (!found){

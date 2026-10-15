@@ -50,6 +50,8 @@ public class Main{
         Scanner sc = new Scanner(System.in);
         while (true){
             System.out.println(Question);
+            System.out.println("Y/N");
+            System.out.print(":");
             String userChoice = sc.nextLine().strip().toUpperCase();
             if (userChoice.equals("Y")||userChoice.equals("YES")){
                 return true;

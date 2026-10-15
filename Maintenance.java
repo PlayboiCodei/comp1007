@@ -39,6 +39,7 @@ public class Maintenance{
         while (true){
             System.out.println("1. For New Report Date");
             System.out.println("Press Enter To Print Maintence Report");
+            System.out.print(":");
             String userInput = sc.nextLine().strip();
             if (userInput.equals("1")){
                 return true;
@@ -102,11 +103,11 @@ public class Maintenance{
 
     public static void getItemsRequiringMaintenanceIndex(){
         int[] array = new int[requireMaintenanceCount];
-        int count = 0;
+        int index = 0;
         for (int i = 0; i < equipmentArray.length; i++){
             String result = Date.compareDate(reportDate, equipmentArray[i].returnNextMaintenanceDate());
             if (result.equals("Same") || result.equals("After")){
-                array[count++] = i;
+                array[index++] = i;
             }
         }
         requireMaintenanceArrayIndex = array;
@@ -126,7 +127,7 @@ public class Maintenance{
         public static void getReportDate(){
         Scanner sc = new Scanner(System.in);
         while (true){
-            System.out.print("Enter Report Date \ndd/mm/yyyy\n: ");
+            System.out.print("\nEnter Report Date \ndd/mm/yyyy\n: ");
             String userInput = sc.nextLine();
             try{
                 reportDate = new Date(userInput);
