@@ -109,6 +109,9 @@ public class Equipment{
             System.out.print(":");
             boolean found = false;
             String equipmentSearch = sc.nextLine().strip().toUpperCase();
+            if (equipmentSearch == ""){
+                continue;
+            }
             Logger.log("Searches For"+equipmentSearch );
             for (int i = 0; i < equipmentArray.length;i++){
                 if (equipmentSearch.equals(equipmentArray[i].returnEquipmentID())){

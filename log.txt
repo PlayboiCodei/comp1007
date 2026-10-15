@@ -1,1 +1,287 @@
+Loads Equipment Array
+System Starts
+Loads Equipment Array
+System Loads Into Search Equipment
+Searches ForEQ2019
+Equipment Found:
+Equipment ID: EQ2019
+Equipment Type: Patient Monitor
+Department: Imaging
+Status: Operational
+Priority: High
+Maintenance Cost:71.0
+Exits To Main Menu
+System Loads Into Search Equipment
+Searches ForEW
+Item Not Found
+Exits To Main Menu
+System Loads Into Satistics
+Report Date Added: 22/4/2026
+Satistics:
+Total Number Of Equipment Items: 50
+Number Of Operational Items: 42
+Number Of Unavailable Items: 8
+Number Of Equipment Items Requiring Maintenance: 0
+Percentage of Equipment Requiring Maintenance: 0.00
+Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: NaN
+Exits To Main Menu
+System loads Into Maintenance
+Maintenance Report: 
+Total Number Of Equipment Items Requiring Maintenance: 0
+Total Number Of High-Priority Items Requiring Maintenance: 0
+System loads Into Maintenance
+Report Date Added: 22/4/2028
+Maintenance Report: 
+Equipment ID: EQ2001
+Equipment Type: Patient Monitor
+Department: Emergency
+Priority: High
+Next Maintenance Date: 18/6/2026
+Equipment ID: EQ2002
+Equipment Type: Infusion Pump
+Department: ICU
+Priority: Medium
+Next Maintenance Date: 7/11/2026
+Equipment ID: EQ2003
+Equipment Type: Defibrillator
+Department: Imaging
+Priority: Low
+Next Maintenance Date: 25/8/2026
+Equipment ID: EQ2004
+Equipment Type: Wheelchair
+Department: Surgery
+Priority: High
+Next Maintenance Date: 14/12/2026
+Equipment ID: EQ2005
+Equipment Type: Ultrasound Machine
+Department: Emergency
+Priority: Medium
+Next Maintenance Date: 3/7/2026
+Equipment ID: EQ2006
+Equipment Type: ECG Machine
+Department: ICU
+Priority: Low
+Next Maintenance Date: 29/9/2026
+Equipment ID: EQ2007
+Equipment Type: Patient Monitor
+Department: Imaging
+Priority: High
+Next Maintenance Date: 12/6/2026
+Equipment ID: EQ2008
+Equipment Type: Infusion Pump
+Department: Surgery
+Priority: Medium
+Next Maintenance Date: 21/10/2026
+Equipment ID: EQ2009
+Equipment Type: Defibrillator
+Department: Emergency
+Priority: Medium
+Next Maintenance Date: 16/8/2026
+Equipment ID: EQ2010
+Equipment Type: Wheelchair
+Department: ICU
+Priority: High
+Next Maintenance Date: 5/12/2026
+Equipment ID: EQ2011
+Equipment Type: Ultrasound Machine
+Department: Imaging
+Priority: Medium
+Next Maintenance Date: 30/6/2026
+Equipment ID: EQ2012
+Equipment Type: ECG Machine
+Department: Surgery
+Priority: Low
+Next Maintenance Date: 18/9/2026
+Equipment ID: EQ2013
+Equipment Type: Patient Monitor
+Department: Emergency
+Priority: High
+Next Maintenance Date: 11/7/2026
+Equipment ID: EQ2014
+Equipment Type: Infusion Pump
+Department: ICU
+Priority: Medium
+Next Maintenance Date: 27/11/2026
+Equipment ID: EQ2015
+Equipment Type: Defibrillator
+Department: Imaging
+Priority: Medium
+Next Maintenance Date: 9/8/2026
+Equipment ID: EQ2016
+Equipment Type: Wheelchair
+Department: Surgery
+Priority: High
+Next Maintenance Date: 15/10/2026
+Equipment ID: EQ2017
+Equipment Type: Ultrasound Machine
+Department: Emergency
+Priority: Medium
+Next Maintenance Date: 22/6/2026
+Equipment ID: EQ2018
+Equipment Type: ECG Machine
+Department: ICU
+Priority: Low
+Next Maintenance Date: 2/12/2026
+Equipment ID: EQ2019
+Equipment Type: Patient Monitor
+Department: Imaging
+Priority: High
+Next Maintenance Date: 31/8/2026
+Equipment ID: EQ2020
+Equipment Type: Infusion Pump
+Department: Surgery
+Priority: Medium
+Next Maintenance Date: 19/7/2026
+Equipment ID: EQ2021
+Equipment Type: Defibrillator
+Department: Emergency
+Priority: Low
+Next Maintenance Date: 24/11/2026
+Equipment ID: EQ2022
+Equipment Type: Wheelchair
+Department: ICU
+Priority: High
+Next Maintenance Date: 13/6/2026
+Equipment ID: EQ2023
+Equipment Type: Ultrasound Machine
+Department: Imaging
+Priority: Medium
+Next Maintenance Date: 7/10/2026
+Equipment ID: EQ2024
+Equipment Type: ECG Machine
+Department: Surgery
+Priority: Low
+Next Maintenance Date: 28/8/2026
+Equipment ID: EQ2025
+Equipment Type: Patient Monitor
+Department: Emergency
+Priority: High
+Next Maintenance Date: 20/12/2026
+Equipment ID: EQ2026
+Equipment Type: Infusion Pump
+Department: ICU
+Priority: Medium
+Next Maintenance Date: 5/9/2026
+Equipment ID: EQ2027
+Equipment Type: Defibrillator
+Department: Imaging
+Priority: Medium
+Next Maintenance Date: 26/6/2026
+Equipment ID: EQ2028
+Equipment Type: Wheelchair
+Department: Surgery
+Priority: High
+Next Maintenance Date: 16/11/2026
+Equipment ID: EQ2029
+Equipment Type: Ultrasound Machine
+Department: Emergency
+Priority: Medium
+Next Maintenance Date: 12/7/2026
+Equipment ID: EQ2030
+Equipment Type: ECG Machine
+Department: ICU
+Priority: Low
+Next Maintenance Date: 4/12/2026
+Equipment ID: EQ2031
+Equipment Type: Patient Monitor
+Department: Imaging
+Priority: High
+Next Maintenance Date: 23/8/2026
+Equipment ID: EQ2032
+Equipment Type: Infusion Pump
+Department: Surgery
+Priority: Medium
+Next Maintenance Date: 30/9/2026
+Equipment ID: EQ2033
+Equipment Type: Defibrillator
+Department: Emergency
+Priority: Low
+Next Maintenance Date: 8/6/2026
+Equipment ID: EQ2034
+Equipment Type: Wheelchair
+Department: ICU
+Priority: High
+Next Maintenance Date: 13/12/2026
+Equipment ID: EQ2035
+Equipment Type: Ultrasound Machine
+Department: Imaging
+Priority: Medium
+Next Maintenance Date: 17/9/2026
+Equipment ID: EQ2036
+Equipment Type: ECG Machine
+Department: Surgery
+Priority: Low
+Next Maintenance Date: 1/7/2026
+Equipment ID: EQ2037
+Equipment Type: Patient Monitor
+Department: Emergency
+Priority: High
+Next Maintenance Date: 29/10/2026
+Equipment ID: EQ2038
+Equipment Type: Infusion Pump
+Department: ICU
+Priority: Medium
+Next Maintenance Date: 10/8/2026
+Equipment ID: EQ2039
+Equipment Type: Defibrillator
+Department: Imaging
+Priority: Low
+Next Maintenance Date: 6/12/2026
+Equipment ID: EQ2040
+Equipment Type: Wheelchair
+Department: Surgery
+Priority: High
+Next Maintenance Date: 21/6/2026
+Equipment ID: EQ2041
+Equipment Type: Ultrasound Machine
+Department: Emergency
+Priority: Medium
+Next Maintenance Date: 14/9/2026
+Equipment ID: EQ2042
+Equipment Type: ECG Machine
+Department: ICU
+Priority: Low
+Next Maintenance Date: 2/8/2026
+Equipment ID: EQ2043
+Equipment Type: Patient Monitor
+Department: Imaging
+Priority: High
+Next Maintenance Date: 23/11/2026
+Equipment ID: EQ2044
+Equipment Type: Infusion Pump
+Department: Surgery
+Priority: Medium
+Next Maintenance Date: 15/6/2026
+Equipment ID: EQ2045
+Equipment Type: Defibrillator
+Department: Emergency
+Priority: Low
+Next Maintenance Date: 11/12/2026
+Equipment ID: EQ2046
+Equipment Type: Wheelchair
+Department: ICU
+Priority: High
+Next Maintenance Date: 27/7/2026
+Equipment ID: EQ2047
+Equipment Type: Ultrasound Machine
+Department: Imaging
+Priority: Medium
+Next Maintenance Date: 8/10/2026
+Equipment ID: EQ2048
+Equipment Type: ECG Machine
+Department: Surgery
+Priority: Low
+Next Maintenance Date: 19/8/2026
+Equipment ID: EQ2049
+Equipment Type: Patient Monitor
+Department: Emergency
+Priority: High
+Next Maintenance Date: 3/11/2026
+Equipment ID: EQ2050
+Equipment Type: Infusion Pump
+Department: ICU
+Priority: Low
+Next Maintenance Date: 25/6/2026
+Total Number Of Equipment Items Requiring Maintenance: 50
+Total Number Of High-Priority Items Requiring Maintenance: 17
 System Exit's
