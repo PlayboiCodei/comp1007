@@ -128,24 +128,19 @@ public class Equipment{
                     System.out.println("Maintenance Cost:" + equipmentArray[i].returnMaintenanceCost());
                     Logger.log("Maintenance Cost:" + equipmentArray[i].returnMaintenanceCost());
                     System.out.println("---------------------------------------");
-                    if(Main.yesOrNo("Would You Like To Search For Another Item Y/N")){
-                        Logger.log("Searches For Another Equipment Item");
-                        found = true;
-                        break;
-                    }else{
-                        Logger.log("Returns To Main Menu");
-                        return;
-                    }
+                    found = false;
                 }
             }
-            if (found == true ||Main.yesOrNo("Item Not Found\nWould You Like to Try Again Y/N?")){
-                Logger.log("Item Not Found Searches Again");
+            if (!found){
+                System.out.println("Item Not Found");
+                Logger.log("Item Not Found");
+            }if (Main.yesOrNo("Would You Like To Search Again")){
+                Logger.log("Searches Again");
                 continue;
             }else{
-                Logger.log("Item Not Found Exits To Main Menu");
+                Logger.log("Exits To Main Menu");
                 return;
             }
-
         }
     }
     // Not Needed MEthods

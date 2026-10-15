@@ -13,12 +13,7 @@ public class Maintenance{
         System.out.println("============================================");
         System.out.println("           Maintenance Report");
         System.out.println("============================================");
-        if (!maintenanceCacluated){
-            calcualteMaintenence();
-            printMaintenanceReport();
-            Main.pressEnterToContinue();
-            return;
-        }else if (askForNewMaintenceReportDate()){
+        if (!maintenanceCacluated || askForNewMaintenceReportDate()){
             calcualteMaintenence();
             printMaintenanceReport();
             Main.pressEnterToContinue();
