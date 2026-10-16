@@ -13,17 +13,13 @@ public class Maintenance{
         System.out.println("============================================");
         System.out.println("           Maintenance Report");
         System.out.println("============================================");
-        if (!maintenanceCacluated || askForNewMaintenceReportDate()){
+        if (!maintenanceCacluated){
             calcualteMaintenence();
-            printMaintenanceReport();
-            Main.pressEnterToContinue();
-            return;
-        }else{
-            printMaintenanceReport();
-            Main.pressEnterToContinue();
-            return;
         }
-    }
+        printMaintenanceReport();
+        Main.pressEnterToContinue();
+        return;
+        }
 
     public static void calcualteMaintenence(){
         equipmentArray = Main.returnEquipmentArray();

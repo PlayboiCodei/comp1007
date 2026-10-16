@@ -14,7 +14,8 @@ public class Main{
             System.out.println("1. View Equipment Statistics");
             System.out.println("2. Search Equipment");
             System.out.println("3. Maintenance Report");
-            System.out.println("4. Exit");
+            System.out.println("4. Change Report Date");
+            System.out.println("5. Exit");
             System.out.println("Please Select An Option");
             System.out.print(":");
             String userInput = sc.nextLine().strip();
@@ -30,6 +31,10 @@ public class Main{
                 Logger.log("System loads Into Maintenance");
                 Maintenance.maintenance();
             }else if (userInput.equals("4")){
+                Logger.log("User Changes Report Date");
+                Maintenance.getReportDate();
+                Maintenance.calcualteMaintenence();
+            }else if (userInput.equals("5")){
                 Logger.log("System Exit's");
                 return;
             }else{
