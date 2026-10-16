@@ -73,8 +73,8 @@ public static void printSatistics(){
             if (equipmentArray[arrayIndex[i]].returnStatus().equals("Unavailable")){
                 count++;
             }
-            unavailableItemsRequiringMaintenence = count;
         }
+        unavailableItemsRequiringMaintenence = count;
     }
 
 
@@ -85,8 +85,8 @@ public static void printSatistics(){
             if (equipmentArray[arrayIndex[i]].returnStatus().equals("Operational")){
                 count++;
             }
-            operationalItemsRequiringMaintenence = count;
         }
+        operationalItemsRequiringMaintenence = count;
     }
 
     public static void getEquipmentItems(){
@@ -124,6 +124,7 @@ public static void printSatistics(){
     public static void getAvrageMaintenanceCost(){
         if (requireingMaintenanceCount == 0){
             avrageMaintenanceCost = 0;
+            return;
         }
         avrageMaintenanceCost = getTotalMaintenanceCost()/requireingMaintenanceCount;
     }

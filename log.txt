@@ -582,3 +582,48 @@ Report Date Added: 22/4/2927
 Report Date Added: 22/4/2026
 User Changes Report Date
 Report Date Added: 22/8/2026
+System Starts
+Loads Equipment Array
+User Changes Report Date
+Report Date Added: 22/4/2026
+System Loads Into Satistics
+Satistics:
+Total Number Of Equipment Items: 50
+Total Number Of Operational Items: 42
+Total Number Of Unavailable Items: 8
+Number Of Operational Items Requiring Maintenence: 0
+Number Of Unavailable Items Requiring Maintenence: 0
+Number Of Equipment Items Requiring Maintenance: 0
+Percentage of Equipment Requiring Maintenance: 0.00
+Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: NaN
+Exits To Main Menu
+System Exit's
+System Starts
+Loads Equipment Array
+System Loads Into Satistics
+Report Date Added: 22/4/2026
+Satistics:
+Total Number Of Equipment Items: 50
+Total Number Of Operational Items: 42
+Total Number Of Unavailable Items: 8
+Number Of Operational Items Requiring Maintenence: 0
+Number Of Unavailable Items Requiring Maintenence: 0
+Number Of Equipment Items Requiring Maintenance: 0
+Percentage of Equipment Requiring Maintenance: 0.00
+Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: NaN
+Exits To Main Menu
+System Starts
+Loads Equipment Array
+System Loads Into Satistics
+Report Date Added: 22/3/2026
+Satistics:
+Total Number Of Equipment Items: 50
+Total Number Of Operational Items: 42
+Total Number Of Unavailable Items: 8
+Number Of Operational Items Requiring Maintenence: 0
+Number Of Unavailable Items Requiring Maintenence: 0
+Number Of Equipment Items Requiring Maintenance: 0
+Percentage of Equipment Requiring Maintenance: 0.00
+Average Estimated Maintenance Cost Of All Equipment Items That Require Maintenance: 0.00
+Exits To Main Menu
+System Exit's

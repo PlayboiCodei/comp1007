@@ -32,8 +32,7 @@ public class Main{
                 Maintenance.maintenance();
             }else if (userInput.equals("4")){
                 Logger.log("User Changes Report Date");
-                Maintenance.getReportDate();
-                Maintenance.calcualteMaintenence();
+                changeReportDate();
             }else if (userInput.equals("5")){
                 Logger.log("System Exit's");
                 return;
@@ -51,6 +50,10 @@ public class Main{
 
     public static Equipment[] returnEquipmentArray(){
         return equipmentArray;
+    }
+
+    public static void changeReportDate(){
+        Maintenance.calcualteMaintenence();
     }
 
     public static boolean yesOrNo(String Question){
